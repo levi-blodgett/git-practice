@@ -1,0 +1,14 @@
+body {
+  margin-right: 40rem;
+  margin-left: 40rem;
+  background-color: aliceblue;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+}
+
+ol {
+  margin-left: 4rem;
+}
