@@ -9,8 +9,14 @@ body {
   text-align: center;
 }
 
+em {
+  font-style: normal;
+  color: red;
+}
+
 #project_title1, #project_title2 {
   display: inline-block;
+  margin-bottom: 2rem;
 }
 
 #project_title2 {

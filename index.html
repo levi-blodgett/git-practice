@@ -17,24 +17,45 @@
   </div>
   <br>
   <br>
+  <p><em>Red text means replace with your own respective information.</em></p>
   <div class="paragraph0">
     <h3>Initializing Git</h3>
     <h5>Install and create the environment for using Git on one's computer</h5>
     <ol>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li><a href="https://git-scm.com/download/win">Download Git</a></li>
+      <li>Click next through all prompts (except the path to enable Git to run in Windows CMD as well)</li>
+      <li>Launch Git</li>
+      <li>Add one's email address to Git</li>
+      <ul>
+        <li>Type: "git config --global user.email '<em>email_address@example.com</em>'"</li>
+      </ul>
+      <li>Add one's user name to Git</li>
+      <ul>
+        <li>Type: "git config --global user.name '<em>One's username</em>'"</li>
+      </ul>
     </ol>
   </div>
   <div class="paragraph1">
     <h3>Initializing Git repositories</h3>
-    <h5>Create repositories on your local system and linking them to Github</h5>
+    <h5>Create repositories on one's local system and adding Git to the project folder</h5>
     <ol>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>Create the repository for the project</li>
+      <li>Open that folder in Git Bash</li>
+      <ul>
+        <li>Either type: "cd <em></em>directory1/directory2/myApplication</em>" or just right-click on the folder and click "Git Bash Here"</li>
+      </ul>
+      <li>Create one's .git file and initialize git in the folder</li>
+      <ul>
+        <li>Type: "git init"</li>
+      </ul>
+      <li><a href="https://github.com/new">Create the repository on Github</a></li>
+      <ul>
+        <li>Copy the link of the remote repository as well, we will need that for the next step</li>
+      </ul>
+      <li>Add the remote repository location to your local Git repository</li>
+      <ul>
+        <li>Type: "git remote add origin <em>repository-url</em>"</li>
+      </ul>
     </ol>
   </div>
   <div class="paragraph2">
