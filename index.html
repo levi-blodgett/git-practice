@@ -58,28 +58,33 @@
       </ul>
     </ol>
   </div>
-  <!-- Unsure of whether I want this to be it's own section or not -->
-  <!-- <div class="paragraph2">
-    <h3>Common Git flags and options</h3>
-    <h5>Flags and options Git has for different commands</h5>
-    <ol>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ol>
-  </div> -->
-  <div class="paragraph3">
+  <div class="paragraph2">
     <h3>Adding, committing, and pushing</h3>
     <h5>Majority of the development cycle, the main thing users will be doing with Git</h5>
     <ol>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>Add whichever files you want to save to Github into the staging area</li>
+      <ul>
+        <li>Type: "git add <em>filename.extension</em>"</li>
+        <li>You can also exclude files by creating a .gitignore file and typing the filenames in there</li>
+        <li>You can also add all files (excluding those in the .gitignore file) at once by typing: "git add ."</li>
+      </ul>
+      <li>Commit your changes that you have added to the staging area</li>
+      <ul>
+        <li>Type: "git commit -m '<em>Type a &lt50 character description here</em>'"</li>
+        <ul>
+          <li>The "-m" flag is so you can commit without going into the commit mode, which makes this step much faster</li>
+        </ul>
+      </ul>
+      <li>Push your commit(s) to Github</li>
+      <ul>
+        <li>Type: "git push -u origin master"</li>
+        <ul>
+          <li>The "-u" flag is so when you pull, it makes it so you can do an argumentless git pull</li>
+        </ul>
+      </ul>
     </ol>
   </div>
-  <div class="paragraph4">
+  <div class="paragraph3">
     <h3>Cloning and forking</h3>
     <h5>The first steps to contribute to an active collaborative project</h5>
     <ol>
@@ -89,7 +94,7 @@
       <li></li>
     </ol>
   </div>
-  <div class="paragraph5">
+  <div class="paragraph4">
     <h3>Branching, merging, and pulling</h3>
     <h5>To work with other users, these are crucial skills to have in a team environment</h5>
     <ol>
