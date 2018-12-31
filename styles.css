@@ -1,7 +1,7 @@
 body {
   margin-right: 20%;
   margin-left: 20%;
-  background-color: rgb(246, 255, 250);
+  background-color: rgb(250, 255, 250);
   color: #333;
 }
 
@@ -11,7 +11,7 @@ body {
 
 em {
   font-style: normal;
-  color: red;
+  color: limegreen;
 }
 
 #project_title1, #project_title2 {
