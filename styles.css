@@ -1,10 +1,20 @@
 body {
-  margin-right: 20%;
-  margin-left: 20%;
+  margin-right: 15%;
+  margin-left: 15%;
   background-color: rgb(252, 255, 252);
   color: #333;
   font-size: calc(12px + .33vw);
   word-wrap: break-word;
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
+}
+
+body.load {
+  opacity: 1;
 }
 
 .header {
@@ -51,8 +61,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-background-color: darkgrey;
-outline: 1px solid slategrey;
+background-color: rgb(165, 169, 165);
+outline: 1px solid rgb(112, 144, 128);
 }
 
 #project_title {

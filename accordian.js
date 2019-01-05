@@ -1,3 +1,7 @@
+// Onload animation part
+document.getElementById("body").className += " load";
+
+// Accordian part
 var acc = document.getElementsByClassName("accordion");
 
 for (var i = 0; i < acc.length; i++) {
