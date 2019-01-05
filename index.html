@@ -20,35 +20,35 @@
   <p><em>Light green text means replace with your own information.</em></p>
   <button class="accordion"><h3>Initializing Git</h3></button>
   <div class="panel">
-    <h5>Install and create the environment for using Git on one's computer</h5>
+    <h5>Install and create an environment for using Git on your computer</h5>
     <ol>
-      <li><a href="https://git-scm.com/download/win">Download Git</a></li>
+      <li><a target="_blank" href="https://git-scm.com/downloads">Download Git</a></li>
       <li>Click next through all prompts (except the path to enable Git to run in Windows CMD as well)</li>
       <li>Launch Git</li>
-      <li>Add one's email address to Git</li>
+      <li>Add your email address to Git</li>
       <ul>
         <li>Type: "git config --global user.email '<em>email_address@example.com</em>'"</li>
       </ul>
-      <li>Add one's user name to Git</li>
+      <li>Add your user name to Git</li>
       <ul>
-        <li>Type: "git config --global user.name '<em>One's username</em>'"</li>
+        <li>Type: "git config --global user.name '<em>your username</em>'"</li>
       </ul>
     </ol>
   </div>
   <button class="accordion"><h3>Initializing Git repositories</h3></button>
   <div class="panel">
-    <h5>Create repositories on one's local system and adding Git to the project folder</h5>
+    <h5>Create repositories on your local system and add Git to the project folder</h5>
     <ol>
       <li>Create the repository for the project</li>
       <li>Open that folder in Git Bash</li>
       <ul>
         <li>Either type: "cd <em></em>directory1/directory2/myApplication</em>" or just right-click on the folder and click "Git Bash Here"</li>
       </ul>
-      <li>Create one's .git file and initialize git in the folder</li>
+      <li>Create your .git file and initialize git in the folder</li>
       <ul>
         <li>Type: "git init"</li>
       </ul>
-      <li><a href="https://github.com/new">Create the repository on Github</a></li>
+      <li><a target="_blank"href="https://github.com/new">Create the repository on GitHub</a></li>
       <ul>
         <li>Copy the link of the remote repository as well, we will need that for the next step</li>
       </ul>
@@ -60,9 +60,9 @@
   </div>
   <button class="accordion"><h3>Adding, committing, and pushing</h3></button>
   <div class="panel">
-    <h5>Majority of the development cycle, the main thing users will be doing with Git</h5>
+    <h5>Begin your project, these three commands alone are almost enough for standalone projects</h5>
     <ol>
-      <li>Add whichever files you want to save to Github into the staging area</li>
+      <li>Add whichever files you want to save to GitHub into the staging area</li>
       <ul>
         <li>Type: "git add <em>filename.extension</em>"</li>
         <li>You can also exclude files by creating a .gitignore file and typing the filenames in there</li>
@@ -75,7 +75,7 @@
           <li>The "-m" flag is so you can commit without going into the commit mode, which makes this step much faster</li>
         </ul>
       </ul>
-      <li>Push your commit(s) to Github</li>
+      <li>Push your commit(s) to GitHub</li>
       <ul>
         <li>Type: "git push -u origin master"</li>
         <ul>
@@ -86,11 +86,11 @@
   </div>
   <button class="accordion"><h3>Cloning, forking, and pulling</h3></button>
   <div class="panel">
-    <h5>The first steps to contribute to an active collaborative project</h5>
+    <h5>Start contributing to an active collaborative project after employing these techniques</h5>
     <ol>
-      <li><a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Generate an SSH key for the next few steps, and add it to the ssh-agent</a></li>
-      <li><a href="https://help.github.com/articles/fork-a-repo/">Fork the repository on Github's site</a></li>
-      <li>Copy the repository on Github to your local system by cloning</li>
+      <li><a target="_blank"href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key">Generate an SSH key</a> for the next few steps, and <a target="_blank"href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent">add it to the ssh-agent</a></li>
+      <li>Fork the repository by navigating to your desired repository on GitHub and clicking "Fork" in the top-right corner</li>
+      <li>Copy your fork of the repository from GitHub onto your local system by cloning</li>
       <ul>
         <li>Type: "git clone https://github.com/<em>username</em>/<em>repository-name</em>.git"</li>
       </ul>
@@ -103,41 +103,44 @@
     <ul>
         <li>BONUS: Save your changes you are working on and work on another (perhaps more pressing) issue</li>
         <ul>
-          <li>To stash it away and save it, type: "git stash <em>filename.extension</em></li>
-          <li>To continue working on it after working on the other issue, type: "git stash apply <em>filename.extension</em></li>
+          <li>To stash it away and save it, type: "git stash <em>filename.extension</em>"</li>
+          <li>To continue working on it after working on the other issue, type: "git stash apply <em>filename.extension</em>"</li>
         </ul>
       </ul>
   </div>
   <button class="accordion"><h3>Branching, merging, and checking out</h3></button>
   <div class="panel">
-    <h5>To work with other users, these are crucial skills to have in a team environment</h5>
+    <h5>Learn how to navigate enterprise developer workflow for actively contributing to a complicated project</h5>
     <ol>
       <li>Type: "git branch" to list all the branches for the project on your local machine</li>
       <li>Create a new branch</li>
       <ul>
-        <li>Type: "git branch <em>branch_name</em></li>
+        <li>Type: "git branch <em>branch_name</em>"</li>
       </ul>
       <li>Switch to an existing branch</li>
       <ul>
-        <li>Type: "git checkout <em>branch_name</em></li>
+        <li>Type: "git checkout <em>branch_name</em>"</li>
       </ul>
       <li>Merge the branch you have been working on with the master</li>
       <ul>
-        <li>Type: "git merge <em>branch_name</em></li>
+        <li>Type: "git merge <em>branch_name</em>"</li>
       </ul>
     </ol>
     <ul>
-        <li>BONUS: You can also create a branch and switch to it at the same time, type: "git checkout -b <em>branch_name</em></li>
+        <li>BONUS: You can also create a branch and switch to it simultaneously</li>
+        <ul>
+          <li>Type: "git checkout -b <em>branch_name</em>"</li>
+        </ul>
     </ul>
   </div>
-  <button class="accordion"><h3>Tracking changes and reverting</h3></button>
+  <button class="accordion"><h3>Tracking changes and reverting versions</h3></button>
   <div class="panel">
-    <h5>Crucial practices to keep track of what is happening to the project</h5>
+    <h5>Stay up to date in a team environment, manage and track a project's workflow and structure</h5>
     <ol>
       <li>Pull from the master or a particular branch</li>
       <ul>
         <li>Type: "git pull"</li>
-        <li>For a particular branch, type: "git pull origin <em>branch_name</em></li>
+        <li>For a particular branch, type: "git pull origin <em>branch_name</em>"</li>
       </ul>
       <li>See what files have been changed and what is being tracked</li>
       <ul>
@@ -150,13 +153,13 @@
       </ul>
       <li>Revert/Checkout to a previous commit version</li>
       <ul>
-        <li>git checkout <em>3427asdhj69123examplehash123912</em></li>
+        <li>Type: "git checkout <em>3427asdhj69123examplehash123912</em>"</li>
       </ul>
     </ol>
   </div>
   <script src="accordian.js"></script>
 </body>
 <footer>
-  <p id="copyright">2018 &copy; <a href="https://www.leviblodgett.com/">Levi Blodgett</a>, all rights reserved.</p>
+  <p id="copyright">2018 &copy; <a target="_blank"href="https://www.leviblodgett.com/">Levi Blodgett</a>, all rights reserved.</p>
 </footer>
 </html>
