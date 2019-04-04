@@ -25,6 +25,7 @@ for (var i = 0; i < acc.length; i++) {
   });
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    this.scrollIntoView(true);
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight === panel.scrollHeight + "px") {
       panel.style.maxHeight = null;
