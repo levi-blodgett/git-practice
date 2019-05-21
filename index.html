@@ -12,99 +12,225 @@
   <br>
   <br>
   <div class="header">
-    <h1 id="project_title1">Enterprise</h1><h1 id="project_title2">Git</h1>
-    <p>By Levi Blodgett</p>
+    <h1 id="project_title1">
+      Enterprise
+    </h1>
+    <h1 id="project_title2">
+      Git
+    </h1>
+    <p>
+      By Levi Blodgett
+    </p>
   </div>
   <br>
   <br>
-  <p id="key"><em>Light green text means replace with your own information.</em></p>
-  <button class="accordion"><h3>Initializing Git</h3></button>
+  <p id="key">
+    <em>Light green text means replace with your own information.</em>
+  </p>
+  <button class="accordion">
+    <h3>
+      Initializing Git
+    </h3>
+  </button>
   <div class="panel">
-    <h5>Install and create an environment for utilizing Git on your computer</h5>
+    <h5>
+      Install and create an environment for utilizing Git on your computer
+    </h5>
     <ol>
-      <li><a target="_blank" href="https://git-scm.com/downloads">Download Git</a></li>
-      <li>Click next through all prompts (except the path to enable Git to run in Windows CMD as well)</li>
-      <li>Launch Git</li>
-      <li>Add your email address to Git</li>
+      <li>
+        <a target="_blank" href="https://git-scm.com/downloads">
+          Download Git
+        </a>
+      </li>
+      <li>
+        Click next through all prompts (except the path to enable Git to run in Windows CMD as well)
+      </li>
+      <li>
+        Launch Git
+      </li>
+      <li>
+        Add your email address to Git
+      </li>
       <ul>
-        <li>Type: "git config --global user.email '<em>email_address@example.com</em>'"</li>
+        <li>
+          <code>
+            git config --global user.email '<em>email_address@example.com</em>'
+          </code>
+        </li>
       </ul>
-      <li>Add your user name to Git</li>
+      <li>
+        Add your user name to Git
+      </li>
       <ul>
-        <li>Type: "git config --global user.name '<em>your username</em>'"</li>
+        <li>
+          <code>
+            git config --global user.name '<em>your username</em>'
+          </code>
+        </li>
       </ul>
     </ol>
   </div>
-  <button class="accordion"><h3>Initializing Git repositories</h3></button>
+  <button class="accordion">
+    <h3>
+      Initializing Git repositories
+    </h3>
+  </button>
   <div class="panel">
-    <h5>Create repositories on your local system and add Git to the project folder</h5>
+    <h5>
+      Create repositories on your local system and add Git to the project folder
+    </h5>
     <ol>
-      <li>Create the repository for the project</li>
-      <li>Open that folder in Git Bash</li>
+      <li>
+        Create the repository for the project
+      </li>
+      <li>
+        Open that folder in Git Bash
+      </li>
       <ul>
-        <li>Either type: "cd <em></em>directory1/directory2/myApplication</em>" or just right-click on the folder and click "Git Bash Here"</li>
+        <li>
+          Either type: <code>cd <em>directory1/directory2/myApplication</em></code> or just right-click on the folder and click "Git Bash Here"
+        </li>
       </ul>
-      <li>Create your .git file and initialize git in the folder</li>
+      <li>
+        Create your .git file and initialize git in the folder
+      </li>
       <ul>
-        <li>Type: "git init"</li>
+        <li>
+          <code>
+            git init
+          </code>
+        </li>
       </ul>
-      <li><a target="_blank"href="https://github.com/new">Create the repository on GitHub</a></li>
+      <li>
+        <a target="_blank"href="https://github.com/new">
+          Create the repository on GitHub
+        </a>
+      </li>
       <ul>
-        <li>Copy the link of the remote repository as well, we will need that for the next step</li>
+        <li>
+          Copy the link of the remote repository as well, we will need that for the next step
+        </li>
       </ul>
-      <li>Add the remote repository location to your local Git repository</li>
+      <li>
+        Add the remote repository location to your local Git repository
+      </li>
       <ul>
-        <li>Type: "git remote add origin <em>repository-url</em>"</li>
+        <li>
+          <code>
+            git remote add origin <em>repository-url</em>
+          </code>
+        </li>
       </ul>
     </ol>
   </div>
-  <button class="accordion"><h3>Adding, committing, and pushing</h3></button>
+  <button class="accordion">
+    <h3>
+      Adding, committing, and pushing
+    </h3>
+  </button>
   <div class="panel">
-    <h5>Begin your project, just these three commands alone are 90% of a developer's use of Git</h5>
+    <h5>
+      Begin your project, just these three commands alone are 90% of a developer's use of Git
+    </h5>
     <ol>
-      <li>Add whichever files you want to save to GitHub into the staging area</li>
+      <li>
+        Add whichever files you want to save to GitHub into the staging area
+      </li>
       <ul>
-        <li>Type: "git add <em>filename.extension</em>"</li>
-        <li>You can also exclude files by creating a .gitignore file and typing the filenames in there</li>
-        <li>You can also add all files (excluding those in the .gitignore file) at once by typing: "git add ."</li>
+        <li>
+          <code>
+            git add <em>filename.extension</em>
+          </code>
+        </li>
+        <li>
+          You can also exclude files by creating a .gitignore file and typing the filenames in there
+        </li>
+        <li>
+          You can also add all files (excluding those in the .gitignore file) at once by typing: <code> git add .</code>
+        </li>
       </ul>
-      <li>Commit your changes that you have added to the staging area</li>
+      <li>
+        Commit your changes that you have added to the staging area
+      </li>
       <ul>
-        <li>Type: "git commit -m '<em>Type a &lt50 character description here</em>'"</li>
+        <li>
+          <code>
+            git commit -m '<em>Type a &lt50 character description here</em>'
+          </code>
+        </li>
         <ul>
-          <li>The "-m" flag is so you can commit without going into the commit mode, which makes this step much faster</li>
+          <li>The <code>-m</code> flag is so you can commit without going into the commit mode, which makes this step much faster</li>
+          <li>
+              The <code>-a</code> flag also allows you to add all files to the staging area AND commit, skipping the step before this if you wish.
+          </li>
         </ul>
       </ul>
-      <li>Push your commit(s) to GitHub</li>
+      <li>
+        Push your commit(s) to GitHub
+      </li>
       <ul>
-        <li>Type: "git push -u origin master"</li>
+        <li>
+          <code>
+            git push -u origin master
+          </code>
+        </li>
         <ul>
-          <li>The "-u" flag is so when you pull, it makes it so you can do an argumentless git pull</li>
+          <li>
+            The <code>-u</code> flag is so when you pull, it makes it so you can do an argumentless git pull
+          </li>
         </ul>
       </ul>
     </ol>
   </div>
-  <button class="accordion"><h3>Cloning, forking, and pulling</h3></button>
+  <button class="accordion">
+    <h3>
+      Cloning, forking, and pulling
+    </h3>
+  </button>
   <div class="panel">
-    <h5>Start contributing to an active collaborative project after employing these techniques</h5>
+    <h5>
+      Start contributing to an active collaborative project after employing these techniques
+    </h5>
     <ol>
       <li><a target="_blank"href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key">Generate an SSH key</a>, <a target="_blank"href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent">add it to the ssh-agent</a>, and <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">add it to your GitHub account</a> for the next few steps.</li>
-      <li>Fork the repository by navigating to your desired repository on GitHub and clicking "Fork" in the top-right corner</li>
-      <li>Copy your fork of the repository from GitHub onto your local system by cloning</li>
+      <li>
+        Fork the repository by navigating to your desired repository on GitHub and clicking "Fork" in the top-right corner
+      </li>
+      <li>
+        Copy your fork of the repository from GitHub onto your local system by cloning
+      </li>
       <ul>
-        <li>Type: "git clone https://github.com/<em>username</em>/<em>repository-name</em>.git"</li>
+        <li>
+          <code>
+            git clone https://github.com/<em>username</em>/<em>repository-name</em>.git"
+          </code>
+        </li>
       </ul>
-      <li>To update from the master branch if it gets updated, then pull from it</li>
+      <li>
+        To update from the master branch if it gets updated, then pull from it
+      </li>
       <ul>
-        <li>Type: "git pull"</li>
+        <li>
+          <code>
+            git pull
+          </code>
+        </li>
       </ul>
-      <li>Code, add, commit, and push</li>
+      <li>
+        Code, add, commit, and push
+      </li>
     </ol>
     <ul>
-        <li>BONUS: Save your changes you are working on and work on another (perhaps more pressing) issue</li>
+        <li>
+          BONUS: Save your changes you are working on and work on another (perhaps more pressing) issue
+        </li>
         <ul>
           <li>To stash it away and save it, type: "git stash <em>filename.extension</em>"</li>
-          <li>To continue working on it after working on the other issue, type: "git stash apply <em>filename.extension</em>"</li>
+          <li>To continue working on it after working on the other issue: 
+            <code>
+              git stash apply <em>filename.extension</em>
+            </code>
+          </li>
         </ul>
       </ul>
   </div>
@@ -112,24 +238,41 @@
   <div class="panel">
     <h5>Learn how to navigate enterprise-level workflow to actively contribute to a complicated project</h5>
     <ol>
-      <li>Type: "git branch" to list all the branches for the project on your local machine</li>
+      <li>
+        <code>git branch</code> to list all the branches for the project on your local machine</li>
       <li>Create a new branch</li>
       <ul>
-        <li>Type: "git branch <em>branch_name</em>"</li>
+        <li>
+          <code>
+            git branch <em>branch_name</em>
+          </code>
+        </li>
       </ul>
       <li>Switch to an existing branch</li>
       <ul>
-        <li>Type: "git checkout <em>branch_name</em>"</li>
+        <li>
+          <code>
+            git checkout <em>branch_name</em>
+          </code>
+        </li>
       </ul>
       <li>Merge the branch you have been working on with the master</li>
       <ul>
-        <li>Type: "git merge <em>branch_name</em>"</li>
+        <li>
+          <code>
+            git merge <em>branch_name</em>
+          </code>
+        </li>
       </ul>
     </ol>
     <ul>
         <li>BONUS: You can also create a branch and switch to it simultaneously</li>
         <ul>
-          <li>Type: "git checkout -b <em>branch_name</em>"</li>
+          <li>
+            <code>
+              git checkout -b <em>branch_name</em>
+            </code>
+          </li>
         </ul>
     </ul>
   </div>
@@ -140,21 +283,55 @@
     <ol>
       <li>Pull from the master or a particular branch</li>
       <ul>
-        <li>Type: "git pull"</li>
-        <li>For a particular branch, type: "git pull origin <em>branch_name</em>"</li>
+        <li>
+          <code>
+            git pull
+          </code>
+        </li>
+        <li>For a particular branch: <code>git pull origin <em>branch_name</em></code></li>
       </ul>
       <li>See what files have been changed and what is being tracked</li>
       <ul>
-        <li>Type: "git status"</li>
-        <li>If you want to see how much each file has changed by the number of lines, type: "git diff --stat"</li>
+        <li>
+          <code>
+            git status
+          </code>
+        </li>
+        <li>If you want to see how much each file has changed by the number of lines: <code>git diff --stat</code></li>
       </ul>
       <li>See the commit history</li>
       <ul>
-        <li>Type: "git log"</li>
+        <li>
+          <code>
+            git log
+          </code>
+          <ul>
+            <li>
+              Type <code>q</code> to exit out of log mode.
+            </li>
+          </ul>
+        </li>
+        <li>If you want to format it to be easier to read, try the following flags:</li>
+        <ul>
+          <li>
+            <code>
+              git log --pretty=oneline
+            </code>
+          </li>
+          <li>
+            <code>
+              git log --pretty=format:"%h - %an, %ar : %s"
+            </code>
+          </li>
+        </ul>
       </ul>
       <li>Revert/Checkout to a previous commit version</li>
       <ul>
-        <li>Type: "git checkout <em>3427asdhj69123examplehash123912</em>"</li>
+        <li>
+          <code>
+            git checkout <em>3427asdhj69123examplehash123912</em>
+          </code>
+        </li>
       </ul>
     </ol>
   </div>
