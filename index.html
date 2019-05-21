@@ -24,8 +24,13 @@
   </div>
   <br>
   <br>
-  <p id="key">
+  <p class="key" id="key1">
     <em>Light green text means replace with your own information.</em>
+  </p>
+  <p class="key" id="key2">
+    <code>
+      Code that is <code title="Like so">indented</code> means you can hover over it for more information.
+    </code>
   </p>
   <button class="accordion">
     <h3>
@@ -54,7 +59,7 @@
       <ul>
         <li>
           <code>
-            git config --global user.email '<em>email_address@example.com</em>'
+            git config <code title="Affects all repositories on the system">--global</code> user.email '<em>email_address@example.com</em>'
           </code>
         </li>
       </ul>
@@ -64,7 +69,7 @@
       <ul>
         <li>
           <code>
-            git config --global user.name '<em>your username</em>'
+            git config <code title="Affects all repositories on the system">--global</code> user.name '<em>your username</em>'
           </code>
         </li>
       </ul>
@@ -146,7 +151,7 @@
           You can also exclude files by creating a .gitignore file and typing the filenames in there
         </li>
         <li>
-          You can also add all files (excluding those in the .gitignore file) at once by typing: <code> git add .</code>
+          You can also add all files in current directory (excluding those in the .gitignore file) by typing: <code> git add <code title="Represents all files in current directory">.</code></code>
         </li>
       </ul>
       <li>
@@ -155,11 +160,10 @@
       <ul>
         <li>
           <code>
-            git commit -m '<em>Type a &lt50 character description here</em>'
+            git commit <code title="Commit without going into the commit mode">-m</code> '<em>Type a &lt50 character description here</em>'
           </code>
         </li>
         <ul>
-          <li>The <code>-m</code> flag is so you can commit without going into the commit mode, which makes this step much faster</li>
           <li>
               The <code>-a</code> flag also allows you to add all files to the staging area AND commit, skipping the step before this if you wish.
           </li>
@@ -171,14 +175,9 @@
       <ul>
         <li>
           <code>
-            git push -u origin master
+            git push <code title="Allows you to do an argumentless pull">-u</code> origin master
           </code>
         </li>
-        <ul>
-          <li>
-            The <code>-u</code> flag is so when you pull, it makes it so you can do an argumentless git pull
-          </li>
-        </ul>
       </ul>
     </ol>
   </div>
@@ -225,7 +224,7 @@
           BONUS: Save your changes you are working on and work on another (perhaps more pressing) issue
         </li>
         <ul>
-          <li>To stash it away and save it, type: "git stash <em>filename.extension</em>"</li>
+          <li>To stash it away and save it: <code>git stash <em>filename.extension</em></code></li>
           <li>To continue working on it after working on the other issue: 
             <code>
               git stash apply <em>filename.extension</em>
@@ -270,7 +269,7 @@
         <ul>
           <li>
             <code>
-              git checkout -b <em>branch_name</em>
+              git checkout <code title="Create a new branch">-b</code> <em>branch_name</em>
             </code>
           </li>
         </ul>
@@ -297,7 +296,8 @@
             git status
           </code>
         </li>
-        <li>If you want to see how much each file has changed by the number of lines: <code>git diff --stat</code></li>
+        <li>If you want to see how much each file has changed by the number of lines: <code>git diff <code title="	
+          Show statistics for files modified in each commit">--stat</code></code></li>
       </ul>
       <li>See the commit history</li>
       <ul>
@@ -315,12 +315,12 @@
         <ul>
           <li>
             <code>
-              git log --pretty=oneline
+              git log <code title="Shorthand for --pretty=oneline --abbrev-commit used together">--oneline</code>
             </code>
           </li>
           <li>
             <code>
-              git log --pretty=format:"%h - %an, %ar : %s"
+              git log <code title="Show commits in an alternate format">--pretty</code>=<code title="Allows you to specify your own log output format">format</code> : "<code title="Abbreviated commit hash">%h</code> - <code title="Author name">%an</code>, <code title="Author date, relative">%ar</code> : <code title="Subject">%s</code>"
             </code>
           </li>
         </ul>

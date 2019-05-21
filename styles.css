@@ -2,6 +2,19 @@ html {
   scroll-behavior: smooth;
 }
 
+/* code[title]:hover:after {
+  content: attr(title);
+  position: absolute;
+} */
+
+.key {
+  text-align: center;
+}
+
+#key1 {
+  margin-bottom: 5px;
+}
+
 body {
   margin-right: 15%;
   margin-left: 15%;
