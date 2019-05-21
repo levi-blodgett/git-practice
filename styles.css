@@ -2,10 +2,40 @@ html {
   scroll-behavior: smooth;
 }
 
-/* code[title]:hover:after {
-  content: attr(title);
+code[data-title] {
+  position: relative;
+  cursor: help;
+  text-transform: none;
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  -o-user-select: none;
+  user-select: none;
+}
+
+code[data-title]:hover:before {
+  content: attr(data-title);
   position: absolute;
-} */
+  top: -38px;
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 2px;
+  background: rgb(236, 239, 236);
+  color: #333;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+code[data-title]:hover:after {
+  content: '';
+  position: absolute;
+  top: -11px;
+  left: 8px;
+  display: inline-block;
+  color: #333;
+  border: 10px solid transparent;	
+  border-top: 10px solid rgb(236, 239, 236);
+}
 
 .key {
   text-align: center;
@@ -106,7 +136,6 @@ footer {
   text-align: left;
   outline: none;
   transition: 0.75s;
-  overflow: hidden;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
