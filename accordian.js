@@ -7,42 +7,69 @@ var acc = document.getElementsByClassName("accordion");
 for (var i = 0; i < acc.length; i++) {
   // Add event to enable preview of div when mousing into the accordian
   acc[i].addEventListener("mouseenter", function() {
-    this.classList.toggle("active");
+    // Define panel for function
     var panel = this.nextElementSibling;
-    var description = this.nextElementSibling.children[0];
-    if (panel.style.maxHeight != panel.scrollHeight + "px") {
-      panel.style.maxHeight = description.scrollHeight + "px";
-    }
+
+    // Function to toggle event when mouse leaves accordian
+    onMouseEnter(this, panel);
   });
   // Add event to disable preview of div when mousing out of accordian
   acc[i].addEventListener("mouseleave", function() {
-    this.classList.toggle("active");
+    // Define panel for function
     var panel = this.nextElementSibling;
-    var description = this.nextElementSibling.children[0];
-    if (panel.style.maxHeight === description.scrollHeight + "px") {
-      panel.style.maxHeight = null;
-    }
+
+    // Function to toggle event when mouse leaves accordian
+    onMouseLeave(this, panel);
   });
   // Add event to make panels active and bring them to max height
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    this.scrollIntoView(true);
+    // Define panel for functions
     var panel = this.nextElementSibling;
-    if (panel.style.maxHeight === panel.scrollHeight + "px") {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+
+    // Functions to toggle events when clicking the accordians
+    togglePanels(this, panel);
+    toggleOverflow(this, panel);
+
+    // Toggle panel class to keep track of when it is active
+    panel.classList.toggle("active");
   });
-  // Add event to make it so overflow doesn't affect active panels
-  // Hides overflow when hiding the panel
-  acc[i].addEventListener("mouseup", function() {
-    if (this.classList.contains("active")) {
-      this.nextElementSibling.style.overflow = "visible";
-      console.log('yes');
-    } else {
-      console.log('no');
-      this.nextElementSibling.style.overflow = "hidden";
-    }
-  });
+}
+
+// Toggles overflow settings on panels
+function toggleOverflow(accordian, panel) {
+  if (panel.classList.contains("active")) {
+    panel.style.overflow = "hidden";
+  } else {
+    panel.style.overflow = "visible";
+  }
+}
+
+// Toggles height on panels
+function togglePanels(accordian, panel) {
+  accordian.scrollIntoView(true);
+  var panel = accordian.nextElementSibling;
+  if (panel.style.maxHeight === panel.scrollHeight + "px") {
+    panel.style.maxHeight = null;
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  } 
+}
+
+// Turns off visiblity of accordian preview
+function onMouseLeave(accordian, panel) {
+  accordian.classList.toggle("active");
+  var description = accordian.nextElementSibling.children[0];
+  if (panel.style.maxHeight === description.scrollHeight + "px") {
+    panel.style.maxHeight = null;
+  }
+}
+
+// Turns on visiblity of accordian preview
+function onMouseEnter(accordian, panel) {
+  accordian.classList.toggle("active");
+  var panel = accordian.nextElementSibling;
+  var description = accordian.nextElementSibling.children[0];
+  if (panel.style.maxHeight != panel.scrollHeight + "px") {
+    panel.style.maxHeight = description.scrollHeight + "px";
+  }
 }
