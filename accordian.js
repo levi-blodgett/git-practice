@@ -28,7 +28,7 @@ for (var i = 0; i < acc.length; i++) {
 
     // Functions to toggle events when clicking the accordians
     togglePanels(this, panel);
-    toggleOverflow(this, panel);
+    toggleOverflow(panel);
 
     // Toggle panel class to keep track of when it is active
     panel.classList.toggle("active");
@@ -36,11 +36,13 @@ for (var i = 0; i < acc.length; i++) {
 }
 
 // Toggles overflow settings on panels
-function toggleOverflow(accordian, panel) {
+function toggleOverflow(panel) {
   if (panel.classList.contains("active")) {
     panel.style.overflow = "hidden";
   } else {
-    panel.style.overflow = "visible";
+    setTimeout(() => {
+      panel.style.overflow = "visible";
+    }, 500);
   }
 }
 
