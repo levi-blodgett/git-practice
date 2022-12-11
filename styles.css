@@ -190,10 +190,10 @@ ol, ul {
 
 .panel {
   padding: 0 18px;
-  background-color: rgb(252, 255, 252);;
+  background-color: rgb(252, 255, 252);
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.4s ease-out;
 }
 
 /* FOOTER */
