@@ -30,9 +30,9 @@
     <em>Light green text means replace with your own information.</em>
   </p>
   <p class="key" id="key2">
-    <code>
-      Code that is <code data-title="Like so">indented</code> means you can hover over it for more information.
-    </code>
+    <code>Hover over <code data-title="Like so">me</code> for more information, click the button to copy this to clipboard! -></code>
+    <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+    <span class="copied-tooltip">Copied!</span>
   </p>
   <button class="accordion">
     <h3>
@@ -60,9 +60,9 @@
       </li>
       <ul>
         <li>
-          <code>
-            git config <code data-title="Affects all repositories on your system">--global</code> user.email '<em>email_address@example.com</em>'
-          </code>
+          <code>git config <code data-title="Affects all repositories on your system">--global</code> user.email '<em>email_address@example.com</em>'</code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
       <li>
@@ -70,9 +70,9 @@
       </li>
       <ul>
         <li>
-          <code>
-            git config <code data-title="Affects all repositories on your system">--global</code> user.name '<em>your username</em>'
-          </code>
+          <code>git config <code data-title="Affects all repositories on your system">--global</code> user.name '<em>your username</em>'</code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
     </ol>
@@ -85,6 +85,8 @@
           <code>
             ssh-keygen <code data-title="<filename> option, lets you specify what file to store the key in">-f</code> ~/.ssh/id_rsa <code data-title="Change the passphrase option">-p</code>
           </code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
     </ul>
@@ -107,7 +109,9 @@
       </li>
       <ul>
         <li>
-          Either type: <code>cd <em>directory1/directory2/myApplication</em></code> or just right-click on the folder and click "Git Bash Here"
+          Either type: <code>cd <em>directory1/directory2/myApplication</em></code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span> or just right-click on the folder and click "Git Bash Here"
         </li>
       </ul>
       <li>
@@ -115,9 +119,9 @@
       </li>
       <ul>
         <li>
-          <code>
-            git init
-          </code>
+          <code>git init</code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
       <li>
@@ -135,9 +139,9 @@
       </li>
       <ul>
         <li>
-          <code>
-            git remote add origin <em>repository-url</em>
-          </code>
+          <code>git remote add origin <em>repository-url</em></code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
     </ol>
@@ -157,15 +161,17 @@
       </li>
       <ul>
         <li>
-          <code>
-            git add <em>filename.extension</em>
-          </code>
+          <code>git add <em>filename.extension</em></code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
         <li>
           You can also exclude files by creating a .gitignore file and typing the filenames in there
         </li>
         <li>
           You can also add all files in current directory (excluding those in the .gitignore file) by typing: <code> git add <code data-title="Represents all files in current directory">.</code></code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
       <li>
@@ -173,9 +179,9 @@
       </li>
       <ul>
         <li>
-          <code>
-            git commit <code data-title="Commit without going into the commit mode">-m</code> '<em>Type a &lt50 character description here</em>'
-          </code>
+          <code>git commit <code data-title="Commit without going into the commit mode">-m</code> '<em>Type a &lt50 character description here</em>'</code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
         <ul>
           <li>
@@ -188,9 +194,9 @@
       </li>
       <ul>
         <li>
-          <code>
-            git push <code data-title="Allows you to do an argumentless pull">-u</code> origin master
-          </code>
+          <code>git push <code data-title="Allows you to do an argumentless pull">-u</code> origin master</code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
     </ol>
@@ -214,9 +220,9 @@
       </li>
       <ul>
         <li>
-          <code>
-            git clone https://github.com/<em>username</em>/<em>repository-name</em>.git"
-          </code>
+          <code>git clone https://github.com/<em>username</em>/<em>repository-name</em>.git"</code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
       <li>
@@ -224,9 +230,9 @@
       </li>
       <ul>
         <li>
-          <code>
-            git pull
-          </code>
+          <code>git pull</code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
       <li>
@@ -238,11 +244,14 @@
           BONUS: Save your changes you are working on and work on another (perhaps more pressing) issue
         </li>
         <ul>
-          <li>To stash it away and save it: <code>git stash <em>filename.extension</em></code></li>
+          <li>To stash it away and save it: <code>git stash <em>filename.extension</em></code>
+            <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+            <span class="copied-tooltip">Copied!</span>
+          </li>
           <li>To continue working on it after working on the other issue:
-            <code>
-              git stash apply <em>filename.extension</em>
-            </code>
+            <code>git stash apply <em>filename.extension</em></code>
+            <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+            <span class="copied-tooltip">Copied!</span>
           </li>
         </ul>
       </ul>
@@ -252,29 +261,31 @@
     <h5>Learn how to navigate enterprise-level workflow to actively contribute to a complicated project</h5>
     <ol>
       <li>
-        <code>git branch</code> to list all the branches for the project on your local machine</li>
+        <code>git branch</code>
+        <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+        <span class="copied-tooltip">Copied!</span> to list all the branches for the project on your local machine</li>
       <li>Create a new branch</li>
       <ul>
         <li>
-          <code>
-            git branch <em>branch_name</em>
-          </code>
+          <code>git branch <em>branch_name</em></code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
       <li>Switch to an existing branch</li>
       <ul>
         <li>
-          <code>
-            git checkout <em>branch_name</em>
-          </code>
+          <code>git checkout <em>branch_name</em></code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
       <li>Merge the branch you have been working on with the master</li>
       <ul>
         <li>
-          <code>
-            git merge <em>branch_name</em>
-          </code>
+          <code>git merge <em>branch_name</em></code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
     </ol>
@@ -282,9 +293,9 @@
         <li>BONUS: You can also create a branch and switch to it simultaneously</li>
         <ul>
           <li>
-            <code>
-              git checkout <code data-title="Create a new branch">-b</code> <em>branch_name</em>
-            </code>
+            <code>git checkout <code data-title="Create a new branch">-b</code> <em>branch_name</em></code>
+            <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+            <span class="copied-tooltip">Copied!</span>
           </li>
         </ul>
     </ul>
@@ -297,28 +308,34 @@
       <li>Pull from the master or a particular branch</li>
       <ul>
         <li>
-          <code>
-            git pull
-          </code>
+          <code>git pull</code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
-        <li>For a particular branch: <code>git pull origin <em>branch_name</em></code></li>
+        <li>For a particular branch: <code>git pull origin <em>branch_name</em></code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
+        </li>
       </ul>
       <li>View what files have been changed and what is being tracked</li>
       <ul>
         <li>
-          <code>
-            git status
-          </code>
+          <code>git status</code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
         <li>If you want to view how much each file has changed by the number of lines: <code>git diff <code data-title="
-          Show statistics for files modified in each commit">--stat</code></code></li>
+          Show statistics for files modified in each commit">--stat</code></code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
+        </li>
       </ul>
       <li>View the commit history</li>
       <ul>
         <li>
-          <code>
-            git log
-          </code>
+          <code>git log</code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
           <ul>
             <li>
               Type <code>q</code> to exit out of log mode.
@@ -328,30 +345,31 @@
         <li>If you want to format it to be easier to read, try the following flags:</li>
         <ul>
           <li>
-            <code>
-              git log <code data-title="Shorthand for --pretty=oneline --abbrev-commit used together">--oneline</code>
-            </code>
+            <code>git log <code data-title="Shorthand for --pretty=oneline --abbrev-commit used together">--oneline</code></code>
+            <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+            <span class="copied-tooltip">Copied!</span>
           </li>
           <li>
-            <code>
-              git log <code data-title="Show commits in an alternate format">--pretty</code>=<code data-title="Allows you to specify your own log output format">format</code> : "<code data-title="Abbreviated commit hash">%h</code> - <code data-title="Author name">%an</code>, <code data-title="Author date, relative">%ar</code> : <code data-title="Subject">%s</code>"
-            </code>
+            <code>git log <code data-title="Show commits in an alternate format">--pretty</code>=<code data-title="Allows you to specify your own log output format">format</code>:"<code data-title="Abbreviated commit hash">%h</code> - <code data-title="Author name">%an</code>, <code data-title="Author date, relative">%ar</code> : <code data-title="Subject">%s</code>"</code>
+            <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+            <span class="copied-tooltip">Copied!</span>
           </li>
         </ul>
       </ul>
       <li>Revert/Checkout to a previous commit version</li>
       <ul>
         <li>
-          <code>
-            git checkout <em>3427asdhj69123examplehash123912</em>
-          </code>
+          <code>git checkout <em>3427asdhj69123examplehash123912</em></code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
     </ol>
   </div>
   <script src="accordian.js"></script>
+  <script src="clipboard.js"></script>
 </body>
 <footer>
-  <p id="copyright">2019 &copy; <a target="_blank" href="https://www.leviblodgett.com/" rel="noopener">Levi Blodgett</a>, all rights reserved.</p>
+  <p id="copyright">2022 &copy; <a target="_blank" href="https://leviblodgett.com/" rel="noopener">Levi Blodgett</a>, all rights reserved.</p>
 </footer>
 </html>
