@@ -230,7 +230,7 @@
       <li>Delete the remote branch after merging</li>
       <ul>
         <li>
-          <code>git push origin <code data-title="what you want to do with the branch">--delete</code> <em>branch_name</em></code>
+          <code>git push origin <code data-title="What you want to do with the branch">--delete</code> <em>branch_name</em></code>
           <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
           <span class="copied-tooltip">Copied!</span>
         </li>
@@ -339,29 +339,27 @@
           <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
           <span class="copied-tooltip">Copied!</span>
           <ul>
-            <li>
-              Type <code>q</code> to exit out of log mode.
-            </li>
+            <li>Type <code>q</code> to exit out of log mode.</li>
+            <li>If you want to format it to be easier to read, try the following flags:</li>
+              <ul>
+                <li>
+                  <code>git log <code data-title="Shorthand for --pretty=oneline --abbrev-commit used together">--oneline</code></code>
+                  <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+                  <span class="copied-tooltip">Copied!</span>
+                </li>
+                <li>
+                  <code>git log <code data-title="Show commits in an alternate format">--pretty</code>=<code data-title="Allows you to specify your own log output format">format</code>:"<code data-title="Abbreviated commit hash">%h</code> - <code data-title="Author name">%an</code>, <code data-title="Author date, relative">%ar</code> : <code data-title="Subject">%s</code>"</code>
+                  <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+                  <span class="copied-tooltip">Copied!</span>
+                </li>
+              </ul>
           </ul>
         </li>
-        <li>If you want to format it to be easier to read, try the following flags:</li>
-        <ul>
-          <li>
-            <code>git log <code data-title="Shorthand for --pretty=oneline --abbrev-commit used together">--oneline</code></code>
-            <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
-            <span class="copied-tooltip">Copied!</span>
-          </li>
-          <li>
-            <code>git log <code data-title="Show commits in an alternate format">--pretty</code>=<code data-title="Allows you to specify your own log output format">format</code>:"<code data-title="Abbreviated commit hash">%h</code> - <code data-title="Author name">%an</code>, <code data-title="Author date, relative">%ar</code> : <code data-title="Subject">%s</code>"</code>
-            <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
-            <span class="copied-tooltip">Copied!</span>
-          </li>
-        </ul>
       </ul>
       <li>Revert/Checkout to a previous commit version</li>
       <ul>
         <li>
-          <code>git checkout <em>3427asdhj69123examplehash123912</em></code>
+          <code>git checkout <em>example</em></code>
           <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
           <span class="copied-tooltip">Copied!</span>
         </li>
