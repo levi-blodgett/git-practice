@@ -50,7 +50,7 @@
         </a>
       </li>
       <li>
-        Click next through all prompts (except the path to enable Git to run in Windows CMD as well)
+        Click next through all prompts
       </li>
       <li>
         Launch Git
@@ -76,20 +76,6 @@
         </li>
       </ul>
     </ol>
-    <ul>
-      <li>
-        BONUS: You can also change the passphrase for your private key by typing:
-      </li>
-      <ul>
-        <li>
-          <code>
-            ssh-keygen <code data-title="<filename> option, lets you specify what file to store the key in">-f</code> ~/.ssh/id_rsa <code data-title="Change the passphrase option">-p</code>
-          </code>
-          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
-          <span class="copied-tooltip">Copied!</span>
-        </li>
-      </ul>
-    </ul>
   </div>
   <button class="accordion">
     <h3>
@@ -153,7 +139,7 @@
   </button>
   <div class="panel">
     <h5>
-      Begin your project, just these three commands alone are 90% of a developer's use of Git
+      Begin your project, just these three commands alone are half of a developer's use of Git
     </h5>
     <ol>
       <li>
@@ -194,7 +180,7 @@
       </li>
       <ul>
         <li>
-          <code>git push <code data-title="Allows you to do an argumentless pull">-u</code> origin master</code>
+          <code>git push <code data-title="Allows you to do an argumentless pull">-u</code> <code data-title="Whichever GitHub repo you linked your local repo to via 'git remote add origin repo-url'">origin</code> <code data-title="Branch you are pushing to">master</code></code>
           <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
           <span class="copied-tooltip">Copied!</span>
         </li>
@@ -203,7 +189,7 @@
   </div>
   <button class="accordion">
     <h3>
-      Cloning, forking, and pulling
+      Cloning, stashing, forking, and pulling
     </h3>
   </button>
   <div class="panel">
@@ -212,12 +198,8 @@
     </h5>
     <ol>
       <li><a target="_blank"href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key" rel="noopener">Generate an SSH key</a>, <a target="_blank"href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent" rel="noopener">add it to the ssh-agent</a>, and <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/" rel="noopener">add it to your GitHub account</a> for the next few steps.</li>
-      <li>
-        Fork the repository by navigating to your desired repository on GitHub and clicking "Fork" in the top-right corner
-      </li>
-      <li>
-        Copy your fork of the repository from GitHub onto your local system by cloning
-      </li>
+      <li>Fork the repository by navigating to your desired repository on GitHub and clicking "Fork" in the top-right corner</li>
+      <li>Copy your fork of the repository from GitHub onto your local system by cloning</li>
       <ul>
         <li>
           <code>git clone https://github.com/<em>username</em>/<em>repository-name</em>.git"</code>
@@ -225,9 +207,7 @@
           <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
-      <li>
-        To update from the master branch if it gets updated, then pull from it
-      </li>
+      <li>To update from the master branch if it gets updated, then pull from it</li>
       <ul>
         <li>
           <code>git pull</code>
@@ -235,9 +215,7 @@
           <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
-      <li>
-        Code, add, commit, and push
-      </li>
+      <li>Code, add, commit, and push</li>
     </ol>
     <ul>
         <li>

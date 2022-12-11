@@ -75,8 +75,8 @@ outline: 1px solid rgb(112, 144, 128);
   content: '';
   transform: rotate(90deg);
   position: absolute;
-  top: -1px;
-  left: -19px;
+  top: 2px;
+  left: -20px;
   display: inline-block;
   color: #333;
   border: 10px solid transparent;
@@ -86,7 +86,7 @@ outline: 1px solid rgb(112, 144, 128);
 /* CLIPBOARD BUTTON */
 
 .clipboard {
-  padding: .9rem .4rem;
+  padding: 1.2rem .4rem;
   margin: .3rem;
   font-size: 90%;
   line-height: 1px;
