@@ -28,22 +28,7 @@ for (var i = 0; i < acc.length; i++) {
 
     // Functions to toggle events when clicking the accordians
     togglePanels(this, panel);
-    toggleOverflow(panel);
-
-    // Toggle panel class to keep track of when it is active
-    panel.classList.toggle("active");
   });
-}
-
-// Toggles overflow settings on panels
-function toggleOverflow(panel) {
-  if (panel.classList.contains("active")) {
-    panel.style.overflow = "hidden";
-  } else {
-    setTimeout(() => {
-      panel.style.overflow = "visible";
-    }, 500);
-  }
 }
 
 // Toggles height on panels
@@ -54,12 +39,12 @@ function togglePanels(accordian, panel) {
     panel.style.maxHeight = null;
   } else {
     panel.style.maxHeight = panel.scrollHeight + "px";
-  } 
+  }
 }
 
 // Turns off visiblity of accordian preview
 function onMouseLeave(accordian, panel) {
-  accordian.classList.toggle("active");
+  //accordian.classList.toggle("active");
   var description = accordian.nextElementSibling.children[0];
   if (panel.style.maxHeight === description.scrollHeight + "px") {
     panel.style.maxHeight = null;
@@ -68,7 +53,7 @@ function onMouseLeave(accordian, panel) {
 
 // Turns on visiblity of accordian preview
 function onMouseEnter(accordian, panel) {
-  accordian.classList.toggle("active");
+  //accordian.classList.toggle("active");
   var panel = accordian.nextElementSibling;
   var description = accordian.nextElementSibling.children[0];
   if (panel.style.maxHeight != panel.scrollHeight + "px") {
