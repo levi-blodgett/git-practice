@@ -187,56 +187,9 @@
       </ul>
     </ol>
   </div>
-  <button class="accordion">
-    <h3>
-      Cloning, stashing, forking, and pulling
-    </h3>
-  </button>
-  <div class="panel">
-    <h5>
-      Start contributing to an active collaborative project after employing these techniques
-    </h5>
-    <ol>
-      <li><a target="_blank"href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key" rel="noopener">Generate an SSH key</a>, <a target="_blank"href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent" rel="noopener">add it to the ssh-agent</a>, and <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/" rel="noopener">add it to your GitHub account</a> for the next few steps.</li>
-      <li>Fork the repository by navigating to your desired repository on GitHub and clicking "Fork" in the top-right corner</li>
-      <li>Copy your fork of the repository from GitHub onto your local system by cloning</li>
-      <ul>
-        <li>
-          <code>git clone https://github.com/<em>username</em>/<em>repository-name</em>.git"</code>
-          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
-          <span class="copied-tooltip">Copied!</span>
-        </li>
-      </ul>
-      <li>To update from the master branch if it gets updated, then pull from it</li>
-      <ul>
-        <li>
-          <code>git pull</code>
-          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
-          <span class="copied-tooltip">Copied!</span>
-        </li>
-      </ul>
-      <li>Code, add, commit, and push</li>
-    </ol>
-    <ul>
-        <li>
-          BONUS: Save your changes you are working on and work on another (perhaps more pressing) issue
-        </li>
-        <ul>
-          <li>To stash it away and save it: <code>git stash <em>filename.extension</em></code>
-            <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
-            <span class="copied-tooltip">Copied!</span>
-          </li>
-          <li>To continue working on it after working on the other issue:
-            <code>git stash apply <em>filename.extension</em></code>
-            <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
-            <span class="copied-tooltip">Copied!</span>
-          </li>
-        </ul>
-      </ul>
-  </div>
   <button class="accordion"><h3>Branching, merging, and checking out</h3></button>
   <div class="panel">
-    <h5>Learn how to navigate enterprise-level workflow to actively contribute to a complicated project</h5>
+    <h5>Learn how to navigate enterprise-level developer workflow in order to contribute to an active project</h5>
     <ol>
       <li>
         <code>git branch</code>
@@ -266,6 +219,22 @@
           <span class="copied-tooltip">Copied!</span>
         </li>
       </ul>
+      <li>Delete the local branch after merging</li>
+      <ul>
+        <li>
+          <code>git branch <code data-title="Deletes branch, can capitalize to -D to force the deletion of a branch with unmerged changes">-d</code> <em>branch_name</em></code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
+        </li>
+      </ul>
+      <li>Delete the remote branch after merging</li>
+      <ul>
+        <li>
+          <code>git push origin <code data-title="what you want to do with the branch">--delete</code> <em>branch_name</em></code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
+        </li>
+      </ul>
     </ol>
     <ul>
         <li>BONUS: You can also create a branch and switch to it simultaneously</li>
@@ -277,6 +246,61 @@
           </li>
         </ul>
     </ul>
+  </div>
+  <button class="accordion">
+    <h3>
+      Cloning, stashing, forking, and pulling
+    </h3>
+  </button>
+  <div class="panel">
+    <h5>
+      Start contributing to an active collaborative project after employing these techniques
+    </h5>
+    <ol>
+      <li><a target="_blank"href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key" rel="noopener">Generate an SSH key</a>, <a target="_blank"href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent" rel="noopener">add it to the ssh-agent</a>, and <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/" rel="noopener">add it to your GitHub account</a> for the next few steps.</li>
+      <li>Fork the repository by navigating to your desired repository on GitHub and clicking "Fork" in the top-right corner</li>
+      <li>Copy your fork of the repository from GitHub onto your local system by cloning</li>
+      <ul>
+        <li>
+          <code>git clone https://github.com/<em>username</em>/<em>repository-name</em>.git"</code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
+        </li>
+      </ul>
+      <li>To update from the master branch if it gets updated, then pull from it</li>
+      <ul>
+        <li>
+          <code>git pull</code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
+        </li>
+      </ul>
+      <li>Make your branch, add your changes, commit to branch, and push</li>
+      <ul>
+        <li>To actually push your commit you will have to set an upstream branch that your local one pushes to:</li>
+        <li>
+          <code>git push --set-upstream origin <em>branch_name</em></code>
+          <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+          <span class="copied-tooltip">Copied!</span>
+        </li>
+      </ul>
+    </ol>
+    <ul>
+        <li>
+          BONUS: Save your changes you are working on and work on another branch without committing your changes
+        </li>
+        <ul>
+          <li>To stash a file: <code>git stash <em>filename.extension</em></code>
+            <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+            <span class="copied-tooltip">Copied!</span>
+          </li>
+          <li>To continue working on the file later:
+            <code>git stash apply <em>filename.extension</em></code>
+            <button type="button" class="clipboard" data-title="Copy to clipboard">📋</button>
+            <span class="copied-tooltip">Copied!</span>
+          </li>
+        </ul>
+      </ul>
   </div>
   <!-- Tracking -->
   <button class="accordion"><h3>Tracking changes and reverting versions</h3></button>
