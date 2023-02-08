@@ -1,16 +1,22 @@
 import "./styles.css";
 import "./skeleton.boilerplate.min.css";
-import "./accordian.js";
 import "./clipboard.js";
 import Header from "./components/Header";
 import SubHeader from "./components/SubHeader";
+import Accordion from "./components/Accordion";
 import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="content">
       <Header />
       <SubHeader />
+      <Accordion />
+      <Accordion />
+      <Accordion />
+      <Accordion />
+      <Accordion />
+      <Accordion />
       <Footer />
     </div>
   );

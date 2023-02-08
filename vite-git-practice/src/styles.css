@@ -37,7 +37,7 @@ body::-webkit-scrollbar-thumb {
 
 /* HEADER */
 
-.header {
+header {
   text-align: center;
 }
 #project_title1,
@@ -147,12 +147,9 @@ body {
   transition: opacity 2s ease-in; */
 }
 h3 {
-  margin-bottom: 0;
   font-size: calc(12px + 1vw);
 }
 h5 {
-  padding-bottom: 10px;
-  margin-bottom: 10px;
   font-size: calc(12px + 0.66vw);
 }
 ol,
@@ -162,7 +159,7 @@ ul {
 
 /* ACCORDIAN */
 
-.accordion {
+.accordionButton {
   background-color: rgb(236, 239, 236);
   color: #444;
   cursor: pointer;
@@ -184,8 +181,12 @@ ul {
   user-select: none;
 }
 .active,
-.accordion:hover {
+.accordionButton:hover {
   background-color: rgb(216, 224, 216);
+}
+
+.accordionTitle {
+  margin-bottom: 0;
 }
 
 /* PANEL */
@@ -196,6 +197,11 @@ ul {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
+}
+
+.panelDescription {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* FOOTER */
