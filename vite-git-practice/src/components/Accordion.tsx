@@ -1,7 +1,6 @@
-import { MouseEvent } from "react";
 import Panel from "./shared/Panel";
 
-const togglePanels = (accordionClick: MouseEvent) => {
+const togglePanels = (accordionClick: React.MouseEvent<HTMLButtonElement>) => {
   const accordion = accordionClick.currentTarget as HTMLButtonElement;
   const panel = accordion.nextElementSibling as HTMLDivElement;
   if (panel.style.maxHeight === panel.scrollHeight + "px") {
@@ -11,7 +10,7 @@ const togglePanels = (accordionClick: MouseEvent) => {
   }
 };
 
-const onMouseLeave = (accordionClick: MouseEvent) => {
+const onMouseLeave = (accordionClick: React.MouseEvent<HTMLButtonElement>) => {
   const accordion = accordionClick.currentTarget as HTMLButtonElement;
   const panel = accordion.nextElementSibling as HTMLDivElement;
   const description = panel.children[0] as HTMLHeadElement;
@@ -20,7 +19,7 @@ const onMouseLeave = (accordionClick: MouseEvent) => {
   }
 };
 
-const onMouseEnter = (accordionClick: MouseEvent) => {
+const onMouseEnter = (accordionClick: React.MouseEvent<HTMLButtonElement>) => {
   const accordion = accordionClick.currentTarget as HTMLButtonElement;
   const panel = accordion.nextElementSibling as HTMLDivElement;
   const description = panel.children[0] as HTMLHeadElement;

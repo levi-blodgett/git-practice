@@ -1,3 +1,5 @@
+import ClipBoard from "./shared/ClipBoard";
+
 function SubHeader() {
   return (
     <div className="subHeader">
@@ -9,14 +11,7 @@ function SubHeader() {
           Hover over <code data-title="Like so">me</code> for more information,
           click the button to copy this to clipboard!
         </code>
-        <button
-          type="button"
-          className="clipboard"
-          data-title="Copy to clipboard"
-        >
-          📋
-        </button>
-        <span className="copied-tooltip">Copied!</span>
+        <ClipBoard></ClipBoard>
       </p>
     </div>
   );

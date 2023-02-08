@@ -1,3 +1,5 @@
+import ClipBoard from "./ClipBoard";
+
 function PanelList() {
   return (
     <div className="panelList">
@@ -23,14 +25,7 @@ function PanelList() {
               </code>{" "}
               user.email '<em>email_address@example.com</em>'
             </code>
-            <button
-              type="button"
-              className="clipboard"
-              data-title="Copy to clipboard"
-            >
-              📋
-            </button>
-            <span className="copied-tooltip">Copied!</span>
+            <ClipBoard></ClipBoard>
           </li>
         </ul>
         <li>Add your user name to Git</li>
@@ -43,14 +38,7 @@ function PanelList() {
               </code>{" "}
               user.name '<em>your username</em>'
             </code>
-            <button
-              type="button"
-              className="clipboard"
-              data-title="Copy to clipboard"
-            >
-              📋
-            </button>
-            <span className="copied-tooltip">Copied!</span>
+            <ClipBoard></ClipBoard>
           </li>
         </ul>
       </ol>

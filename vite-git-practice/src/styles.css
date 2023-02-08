@@ -59,6 +59,20 @@ header {
   margin-bottom: 5px;
 }
 
+/* CLIPBOARD BUTTON */
+
+.clipboardButton {
+  padding: 1.2rem 0.4rem;
+  margin: 0.3rem;
+  font-size: 90%;
+  line-height: 1px;
+  height: 5px;
+  white-space: nowrap;
+  background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+
 /* CLIPBOARD TOOLTIP */
 
 .copied-tooltip {
@@ -82,20 +96,6 @@ header {
   color: #333;
   border: 10px solid transparent;
   border-top: 10px solid #f1f1f1;
-}
-
-/* CLIPBOARD BUTTON */
-
-.clipboard {
-  padding: 1.2rem 0.4rem;
-  margin: 0.3rem;
-  font-size: 90%;
-  line-height: 1px;
-  height: 5px;
-  white-space: nowrap;
-  background: #f1f1f1;
-  border: 1px solid #e1e1e1;
-  border-radius: 4px;
 }
 
 /* CODE TOOLTIPS */
@@ -197,6 +197,13 @@ ul {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
+}
+
+code,
+.clipboard {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .panelDescription {

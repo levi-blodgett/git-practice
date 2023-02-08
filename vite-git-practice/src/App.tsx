@@ -1,6 +1,5 @@
 import "./styles.css";
 import "./skeleton.boilerplate.min.css";
-import "./clipboard.js";
 import Header from "./components/Header";
 import SubHeader from "./components/SubHeader";
 import Accordion from "./components/Accordion";
