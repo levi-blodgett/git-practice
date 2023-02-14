@@ -37,7 +37,7 @@ function Accordion() {
         onMouseEnter={(e) => onMouseEnter(e)}
         onClick={(e) => togglePanels(e)}
       >
-        <h3 className="accordionTitle">Initializing Git</h3>
+        <h3 className="accordionTitle">Replace me 1</h3>
       </button>
       <Panel></Panel>
     </div>

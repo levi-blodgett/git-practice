@@ -1,0 +1,24 @@
+{
+  "accordionData": [
+    {
+      "id": 1,
+      "accordionTitle": "Initializing Git",
+      "panelDescription": "Install and create an environment for utilizing Git on your computer",
+      "panelList": {
+        "1": "Download Git",
+        "2": "Click next through all prompts",
+        "3": "Launch Git"
+      }
+    },
+    {
+      "id": 2,
+      "accordionTitle": "Initializing Git repositories",
+      "panelDescription": "Create repositories on your local system and add Git to the project folder ",
+      "panelList": {
+        "1": "Create the repository for the project ",
+        "2": "Open that folder in Git Bash",
+        "3": "Create your .git file and initialize git in the folder"
+      }
+    }
+  ]
+}

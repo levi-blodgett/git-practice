@@ -4,8 +4,11 @@ import Header from "./components/Header";
 import SubHeader from "./components/SubHeader";
 import Accordion from "./components/Accordion";
 import Footer from "./components/Footer";
+import useFetch from "./useFetch";
 
-function App() {
+const App = () => {
+  const { data, isPending, error } = useFetch("/assets/db.json");
+
   return (
     <div className="content">
       <Header />
@@ -19,6 +22,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
